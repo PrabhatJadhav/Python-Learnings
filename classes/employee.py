@@ -4,3 +4,7 @@ class Employee:
         self.salary=salary
         self.department=department
         self.on_probation=on_probation
+        
+    def is_on_probation(self):
+        return self.on_probation
+        
