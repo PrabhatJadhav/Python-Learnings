@@ -1,9 +1,15 @@
-# from utils.generate_rand_numbers import *
+import sys
+import os
 
-# # print(random_number_generator.__name__)
-# print(a_random_number(100))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import test_module as test_module
+import utils.generate_rand_numbers as numbers_generator
 
-print(test_module.__name__)
+
+# print(numbers_generator.__name__)
+print(numbers_generator.a_random_number(100))
+
+# import test_module as test_module
+
+# print(test_module.__name__)
 
