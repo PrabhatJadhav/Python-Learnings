@@ -1,0 +1,18 @@
+Q. Why Data Scructure is required and it's adv.
+
+Ans.
+Data Scructure is a paticular way of storing and/or organizing data so it can be used efficiently for operations
+
+Types OF Data Scructure :-
+
+Linear > Array, Dynamic Array, Linked List, Stack, Queue, Deque etc
+
+Non-Linear > DST,AVL,B-Tree,B+Tree,Graph etc
+
+
+Q. Algorithm definition and it's use
+
+Ans. 
+A step by step lingusitic representation of logic to solve a given problem
+1. Helpful for programmer as a documentation
+2. Without writing a code we can determine if this approach is more efficient/sutiable for given condtion
