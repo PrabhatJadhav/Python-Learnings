@@ -1,0 +1,47 @@
+Big O notation is used to measure how running time or space requiremnts grow as the input size grows for your program
+
+> Drop constants from equation, only keep the varying / fastest growing part
+> Always assume worst case scenario
+
+Time Complexity :-
+
+1. Linear Graph > O(n) > Looping through elements in an array
+
+2. Constant Graph > O(1) > Random access of an array in a list, insert an element at the start of a LinkedList
+
+Loops > n Complexity
+
+2 Loops > n^2
+
+3. Log Graph > O(log n) >  Time stays linear/decreases as data increases > Binary Search
+
+4. Quasi Linear > O(n log n) > Similar to linear for some time but then time increases quicker as data increases > quicksort, mergesort, heapsort
+
+5. Quadratic > O(n^2) > Insertion / Selection / Bubble sort > Quicker with smaller data
+
+6. Exponential > O(2^n) > Travelling Salesman
+
+7. Factorial > O(n!) > Travelling Salesman
+
+O(n^2) is worse than O(n!)
+O(sqrt(n)) is worse than O(log n) but better than O(n)
+
+Best to worst for large data > 
+
+
+> When solving DSA questions, we get some time constraints which need to be respected
+
+- A program can be ran for a max of 10^8 operations
+- If in time constraints it tells us that :-
+
+- n > 10^8 > We can solve this in  O(log n) /  O(1)
+- n <= 10^8 > We can solve this in  O(n)
+- n <= 10^6 > We can solve this in  O(n log n) > Sorting can be used > Generally greedy problem
+- n <= 10^4 > We can solve this in  O(n^2) only if ther's no constant attached else O(n log n)
+- n <= 500 > We can solve this in  O(n^3)
+- n <= 25 > We can solve this in  O(2n) > Brute force / recursion
+- n <= 12 > We can solve this in  O(n!)
+
+> As n decreases, time complexity increases
+
+
