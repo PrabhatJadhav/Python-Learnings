@@ -1,25 +1,17 @@
-array =[1,1,2]
-k=0
+##### Brute Force Approach #####
 
+def removeDuplicates(nums):
+    i = 0
+    while i < len(nums)-1:
+        if nums[i] == nums[i+1]:
+            nums.pop(i)
+        else:
+            i+=1
         
-def duplicatesFromSortedArray():
-    for indexOfTarget,number in enumerate(array):
-        for indexOfNumberBeingSearched,num2 in enumerate(array):
-            print('number',number,"and index ",indexOfTarget)
-            print('2nd number',array[indexOfNumberBeingSearched+1],"amd index ",indexOfNumberBeingSearched+1)
-           
-            
-            if number == array[indexOfNumberBeingSearched+1] and indexOfTarget == indexOfNumberBeingSearched+1:
-                global k
-                k+=1
-                array.pop(indexOfNumberBeingSearched)
-    
-    
-    
-        
-        
-        
-duplicatesFromSortedArray()
-print("k ==>", k)
-print("array ==>", array)
+    return nums
 
+nums = [1, 1, 2, 2, 3, 4, 4, 5]
+
+print(removeDuplicates(nums),'and length ==>',len(nums))
+
+##### Time complexity is O(n^2) because of loop plus pop operation
