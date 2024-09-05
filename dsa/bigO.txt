@@ -45,3 +45,14 @@ Best to worst for large data >
 > As n decreases, time complexity increases
 
 
+Array operations >
+
+Access by index: O(1)
+Insert/Delete (end): O(1)
+Insert/Delete (beginning/middle): O(n)
+Linear search: O(n)
+Sorting: O(nlogn)
+Copying: O(n)
+
+
+
