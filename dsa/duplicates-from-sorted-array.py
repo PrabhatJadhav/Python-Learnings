@@ -31,11 +31,11 @@ def removeDuplicates(nums):
             i += 1  # Move the pointer for unique elements
             nums[i] = nums[j]   #Place the new unique element at index i
 
-    return i + 1
+    return nums[:i + 1]
         
         
 
-nums = [1, 2, 3, 4, 4, 5]
+nums = [0,0,1,1,1,2,2,3,3,4]
 k = removeDuplicates(nums)
 print(k)
-print(nums[:k])
+# print(nums[:k])
